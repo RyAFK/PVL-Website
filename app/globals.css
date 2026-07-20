@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #0f2233;
+  --color-ink-2: #1c3652;
+  --color-cream: #faf7f1;
+  --color-cream-2: #f2ede2;
+  --color-paper: #ffffff;
+  --color-gold: #7d5f2f;
+  --color-gold-light: #c9ab77;
+  --color-slate: #4b5b6b;
+  --color-slate-light: #5c6f80;
+  --color-line: #e4ddd0;
+  --color-success: #2f6f4f;
+  --color-focus: #1c3652;
+
+  --font-serif: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+
+  --shadow-soft: 0 1px 2px rgba(15, 34, 51, 0.04), 0 8px 24px -8px rgba(15, 34, 51, 0.10);
+  --shadow-card: 0 1px 1px rgba(15, 34, 51, 0.03), 0 12px 32px -12px rgba(15, 34, 51, 0.14);
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-ink-2: var(--color-ink-2);
+  --color-cream: var(--color-cream);
+  --color-cream-2: var(--color-cream-2);
+  --color-paper: var(--color-paper);
+  --color-gold: var(--color-gold);
+  --color-gold-light: var(--color-gold-light);
+  --color-slate: var(--color-slate);
+  --color-slate-light: var(--color-slate-light);
+  --color-line: var(--color-line);
+  --color-success: var(--color-success);
+
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+}
+
+* {
+  scrollbar-gutter: stable;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-gold-light);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.skip-link:focus-visible {
+  outline-offset: 4px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
