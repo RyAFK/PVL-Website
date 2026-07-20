@@ -23,13 +23,13 @@ export default function SuitabilityPage() {
         title="Which vision-correction pathway may be relevant?"
         description="Answer a few simple questions to explore which treatment options may be appropriate to discuss with the clinical team."
       />
-      <section className="border-b border-line bg-paper py-14 sm:py-16">
+      <section className="border-b border-line bg-paper py-20 sm:py-24">
         <Container className="max-w-3xl">
           <SuitabilityChecker variant="full" />
         </Container>
       </section>
 
-      <section aria-labelledby="suitability-next-heading" className="border-b border-line bg-cream-2 py-14 sm:py-16">
+      <section aria-labelledby="suitability-next-heading" className="border-b border-line bg-cream-2 py-20 sm:py-24">
         <Container>
           <SectionHeading
             id="suitability-next-heading"

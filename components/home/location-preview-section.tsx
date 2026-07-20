@@ -4,7 +4,7 @@ import { LocationSection } from "@/components/sections/location-section";
 
 export function LocationPreviewSection() {
   return (
-    <section aria-labelledby="location-heading" className="border-b border-line bg-cream-2 py-16 sm:py-20">
+    <section aria-labelledby="location-heading" className="border-b border-line bg-cream-2 py-24 sm:py-28">
       <Container>
         <SectionHeading
           id="location-heading"

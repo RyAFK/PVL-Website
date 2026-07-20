@@ -7,7 +7,7 @@ export function SuitabilityFinderSection() {
     <section
       id="suitability-finder"
       aria-labelledby="suitability-finder-heading"
-      className="border-b border-line bg-cream-2 py-16 sm:py-20"
+      className="border-b border-line bg-cream-2 py-24 sm:py-28"
     >
       <Container>
         <SectionHeading

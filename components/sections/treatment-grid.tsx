@@ -7,7 +7,7 @@ import { trackEvent } from "@/lib/analytics";
 
 export function TreatmentGrid({ treatments }: { treatments: Treatment[] }) {
   return (
-    <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
       {treatments.map((treatment) => (
         <TreatmentCard key={treatment.slug} treatment={treatment} />
       ))}
@@ -17,7 +17,7 @@ export function TreatmentGrid({ treatments }: { treatments: Treatment[] }) {
 
 function TreatmentCard({ treatment }: { treatment: Treatment }) {
   return (
-    <article className="flex flex-col rounded-2xl border border-line bg-paper p-6 shadow-soft transition-shadow hover:shadow-card">
+    <article className="flex flex-col rounded-2xl border border-line bg-paper p-7 shadow-soft transition-shadow hover:shadow-card">
       <p className="text-xs font-semibold uppercase tracking-[0.1em] text-gold">
         {treatment.eyebrow}
       </p>

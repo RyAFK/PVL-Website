@@ -22,13 +22,13 @@ export default function ResourcesIndexPage() {
         title="Clinically reviewed reading"
         description="Articles written to help you ask better questions at your consultation, not to replace one."
       />
-      <section className="border-b border-line bg-paper py-14 sm:py-16">
-        <Container className="grid gap-5 sm:grid-cols-2">
+      <section className="border-b border-line bg-paper py-20 sm:py-24">
+        <Container className="grid gap-8 sm:grid-cols-2">
           {articles.map((article) => (
             <Link
               key={article.slug}
               href={`/resources/${article.slug}`}
-              className="flex flex-col rounded-2xl border border-line bg-cream-2 p-6 shadow-soft hover:shadow-card"
+              className="flex flex-col rounded-2xl border border-line bg-cream-2 p-7 shadow-soft hover:shadow-card"
             >
               <h2 className="font-serif text-xl text-ink">{article.title}</h2>
               <p className="mt-2 flex-1 text-sm leading-relaxed text-slate">{article.dek}</p>

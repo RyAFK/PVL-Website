@@ -2,7 +2,7 @@ import { clinicalReview } from "@/content/clinical-review";
 
 export function MedicalReviewPanel({ references }: { references?: string[] }) {
   return (
-    <div className="rounded-2xl border border-line bg-cream-2 p-6 text-sm text-slate">
+    <div className="rounded-2xl border border-line bg-cream-2 p-7 text-sm text-slate">
       <h2 className="font-serif text-lg text-ink">About this information</h2>
       <dl className="mt-3 grid gap-2 sm:grid-cols-2">
         <div>

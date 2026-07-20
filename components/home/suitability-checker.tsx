@@ -59,7 +59,7 @@ export function SuitabilityChecker({ variant = "embedded" }: { variant?: "embedd
   return (
     <div
       className={`rounded-2xl border border-line bg-paper shadow-card ${
-        variant === "embedded" ? "p-6 sm:p-8" : "p-6 sm:p-10"
+        variant === "embedded" ? "p-7 sm:p-8" : "p-7 sm:p-10"
       }`}
     >
       {step !== "result" ? (
@@ -160,7 +160,7 @@ function ResultBlock({
       <h3 className="font-serif text-xl text-ink sm:text-2xl">{headline}</h3>
       <p className="mt-2 text-sm leading-relaxed text-slate">{rationale}</p>
 
-      <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+      <ul className="mt-5 grid gap-4 sm:grid-cols-2">
         {pathwaySlugs.map((slug) => {
           const treatment = getTreatmentBySlug(slug);
           if (!treatment) return null;

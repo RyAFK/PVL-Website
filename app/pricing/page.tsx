@@ -27,11 +27,11 @@ export default function PricingPage() {
         description="Because the right technique and lens depend on your eyes, exact pricing is confirmed at consultation rather than quoted online without an assessment."
       />
 
-      <section className="border-b border-line bg-paper py-14 sm:py-16">
+      <section className="border-b border-line bg-paper py-20 sm:py-24">
         <Container>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {pricingPackages.map((pkg) => (
-              <div key={pkg.treatmentSlug} className="rounded-2xl border border-line bg-cream-2 p-6">
+              <div key={pkg.treatmentSlug} className="rounded-2xl border border-line bg-cream-2 p-7">
                 <h2 className="font-serif text-lg text-ink">{pkg.treatmentName}</h2>
                 {pkg.guidePriceFrom ? (
                   <p className="mt-2 font-serif text-2xl text-ink">{pkg.guidePriceFrom}</p>
@@ -50,7 +50,7 @@ export default function PricingPage() {
             ))}
           </div>
 
-          <dl className="mt-8 grid gap-6 rounded-2xl border border-line bg-cream-2 p-6 sm:grid-cols-2 lg:grid-cols-4">
+          <dl className="mt-10 grid gap-8 rounded-2xl border border-line bg-cream-2 p-8 sm:grid-cols-2 lg:grid-cols-4">
             <div>
               <dt className="text-sm font-semibold text-ink">Consultation fee</dt>
               <dd className="mt-1 text-sm text-slate">{pricingNotes.consultationFee}</dd>
@@ -71,7 +71,7 @@ export default function PricingPage() {
         </Container>
       </section>
 
-      <section aria-labelledby="pricing-faq-heading" className="border-b border-line bg-cream-2 py-14 sm:py-16">
+      <section aria-labelledby="pricing-faq-heading" className="border-b border-line bg-cream-2 py-20 sm:py-24">
         <Container className="max-w-3xl">
           <SectionHeading id="pricing-faq-heading" eyebrow="Questions" title="Pricing and finance FAQs" align="center" />
           <div className="mt-8">

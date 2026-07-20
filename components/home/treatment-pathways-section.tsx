@@ -6,7 +6,7 @@ import { CtaLink } from "@/components/ui/cta-link";
 
 export function TreatmentPathwaysSection() {
   return (
-    <section aria-labelledby="pathways-heading" className="border-b border-line bg-paper py-16 sm:py-20">
+    <section aria-labelledby="pathways-heading" className="border-b border-line bg-paper py-24 sm:py-28">
       <Container>
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading

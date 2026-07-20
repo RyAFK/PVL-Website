@@ -7,7 +7,7 @@ import { CheckIcon } from "@/components/ui/icons";
 export function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-line bg-cream">
-      <Container className="relative grid gap-12 py-14 sm:py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-28">
+      <Container className="relative grid gap-14 py-20 sm:py-28 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-32">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.14em] text-gold">
             Surgeon-led care on Harley Street
@@ -51,11 +51,11 @@ export function Hero() {
         </div>
 
         <div className="relative hidden aspect-[4/5] items-center justify-center lg:flex" aria-hidden="true">
-          <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-br from-ink via-ink-2 to-[#284763]" />
+          <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-br from-ink via-ink-2 to-[#4a4636]" />
           <div className="absolute inset-6 rounded-[2rem] border border-cream/15" />
           <div className="relative h-56 w-56 rounded-full border border-gold-light/40">
             <div className="absolute inset-6 rounded-full border border-gold-light/50" />
-            <div className="absolute inset-[42%] rounded-full bg-gold-light/90 shadow-[0_0_60px_10px_rgba(201,171,119,0.35)]" />
+            <div className="absolute inset-[42%] rounded-full bg-gold-light/90 shadow-[0_0_60px_10px_rgba(209,163,92,0.4)]" />
           </div>
           <div className="absolute bottom-8 left-8 right-8 rounded-2xl bg-cream/95 p-4 shadow-soft backdrop-blur">
             <p className="text-xs font-semibold uppercase tracking-[0.1em] text-gold">

@@ -22,7 +22,7 @@ export default function PatientStoriesPage() {
         title="Hearing from patients in their own words"
         description="Reviews are independently hosted on Trustpilot and Google. Filter by treatment to find a story closest to your own situation."
       />
-      <section className="border-b border-line bg-paper py-14 sm:py-16">
+      <section className="border-b border-line bg-paper py-20 sm:py-24">
         <Container>
           <ReviewsFilterable />
         </Container>

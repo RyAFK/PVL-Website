@@ -5,7 +5,7 @@ import { homepageFaqs } from "@/content/faqs";
 
 export function FaqSection() {
   return (
-    <section aria-labelledby="faq-heading" className="border-b border-line bg-paper py-16 sm:py-20">
+    <section aria-labelledby="faq-heading" className="border-b border-line bg-paper py-24 sm:py-28">
       <Container className="mx-auto max-w-3xl">
         <SectionHeading
           id="faq-heading"

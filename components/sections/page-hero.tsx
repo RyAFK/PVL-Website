@@ -13,7 +13,7 @@ export function PageHero({
   children?: ReactNode;
 }) {
   return (
-    <section className="border-b border-line bg-cream py-12 sm:py-16">
+    <section className="border-b border-line bg-cream py-16 sm:py-24">
       <Container>
         <div className="max-w-2xl">
           {eyebrow ? (

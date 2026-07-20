@@ -27,16 +27,16 @@ const pillars = [
 
 export function WhyPvlSection() {
   return (
-    <section aria-labelledby="why-pvl-heading" className="border-b border-line bg-cream-2 py-16 sm:py-20">
+    <section aria-labelledby="why-pvl-heading" className="border-b border-line bg-cream-2 py-24 sm:py-28">
       <Container>
         <SectionHeading
           id="why-pvl-heading"
           eyebrow="Why Precision Vision London"
           title="An approach built around clarity, not pressure"
         />
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {pillars.map((pillar) => (
-            <div key={pillar.title} className="rounded-2xl bg-paper p-6 shadow-soft">
+            <div key={pillar.title} className="rounded-2xl bg-paper p-7 shadow-soft">
               <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gold/15">
                 <CheckIcon className="h-4 w-4 text-gold" />
               </span>

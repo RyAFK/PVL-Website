@@ -8,7 +8,7 @@ import { trackEvent } from "@/lib/analytics";
 export function MobileActionBar() {
   return (
     <div
-      className="fixed inset-x-0 bottom-0 z-30 grid h-16 grid-cols-3 border-t border-line bg-paper shadow-[0_-6px_18px_-8px_rgba(15,34,51,0.18)] xl:hidden"
+      className="fixed inset-x-0 bottom-0 z-30 grid h-16 grid-cols-3 border-t border-line bg-paper shadow-[0_-6px_18px_-8px_rgba(24,36,48,0.2)] xl:hidden"
       role="navigation"
       aria-label="Quick actions"
     >

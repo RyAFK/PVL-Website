@@ -21,7 +21,7 @@ export default function ComplaintsProcedurePage() {
         title="Complaints procedure"
         description="Pending compliance review — placeholder content."
       />
-      <section className="border-b border-line bg-paper py-14 sm:py-16">
+      <section className="border-b border-line bg-paper py-20 sm:py-24">
         <Container className="max-w-3xl space-y-6 text-sm leading-relaxed text-slate">
           <p>
             We aim to provide the highest standard of care, and want to hear from you if

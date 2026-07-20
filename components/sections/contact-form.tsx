@@ -62,7 +62,7 @@ export function ContactForm() {
     return (
       <div
         role="status"
-        className="rounded-2xl border border-success/30 bg-success/10 p-6 text-sm text-ink"
+        className="rounded-2xl border border-success/30 bg-success/10 p-7 text-sm text-ink"
       >
         <p className="font-serif text-xl text-ink">Thank you — your enquiry has been sent</p>
         <p className="mt-2 text-slate">

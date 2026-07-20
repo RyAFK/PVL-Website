@@ -7,7 +7,7 @@ export function FaqAccordion({ faqs, includeSchema = true }: { faqs: Faq[]; incl
     <div className="divide-y divide-line rounded-2xl border border-line bg-paper">
       {includeSchema ? <JsonLd data={buildFaqSchema(faqs)} /> : null}
       {faqs.map((faq) => (
-        <details key={faq.question} className="group p-5 sm:p-6">
+        <details key={faq.question} className="group p-5 sm:p-7">
           <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-serif text-lg text-ink">
             {faq.question}
             <span className="flex-shrink-0 text-2xl font-light text-gold transition-transform group-open:rotate-45">

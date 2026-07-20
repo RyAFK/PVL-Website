@@ -24,8 +24,8 @@ export default function SurgeonsIndexPage() {
         title="Consultant-led care, by name"
         description="Every patient is under the named care of a consultant ophthalmic surgeon from assessment through to aftercare."
       />
-      <section className="border-b border-line bg-paper py-14 sm:py-16">
-        <Container className="grid gap-6 sm:grid-cols-2">
+      <section className="border-b border-line bg-paper py-20 sm:py-24">
+        <Container className="grid gap-8 sm:grid-cols-2">
           {surgeons.map((surgeon) => {
             const initials = surgeon.name
               .replace(/^(Mr|Ms|Mrs|Dr|Mx)\.?\s/, "")
@@ -37,7 +37,7 @@ export default function SurgeonsIndexPage() {
               <Link
                 key={surgeon.slug}
                 href={`/surgeons/${surgeon.slug}`}
-                className="flex items-start gap-5 rounded-2xl border border-line bg-cream-2 p-6 shadow-soft hover:shadow-card"
+                className="flex items-start gap-5 rounded-2xl border border-line bg-cream-2 p-7 shadow-soft hover:shadow-card"
               >
                 <span
                   className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-ink to-ink-2 font-serif text-xl text-cream"

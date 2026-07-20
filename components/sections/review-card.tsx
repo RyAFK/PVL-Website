@@ -6,7 +6,7 @@ import { trackEvent } from "@/lib/analytics";
 
 export function ReviewCard({ review }: { review: Review }) {
   return (
-    <article className="flex flex-col rounded-2xl border border-line bg-paper p-6 shadow-soft">
+    <article className="flex flex-col rounded-2xl border border-line bg-paper p-7 shadow-soft">
       <div className="flex items-center justify-between gap-2">
         <span className="rounded-full bg-gold/15 px-3 py-1 text-xs font-semibold text-gold">
           {review.treatment}

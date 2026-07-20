@@ -51,7 +51,7 @@ export default async function ArticlePage({
       />
       <Breadcrumbs items={[{ name: "Resources", href: "/resources" }, { name: article.title, href: `/resources/${article.slug}` }]} />
 
-      <article className="border-b border-line bg-cream py-12 sm:py-16">
+      <article className="border-b border-line bg-cream py-16 sm:py-24">
         <Container className="max-w-3xl">
           <h1 className="text-balance font-serif text-4xl leading-tight text-ink sm:text-5xl">
             {article.title}

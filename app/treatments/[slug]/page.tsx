@@ -73,7 +73,7 @@ export default async function TreatmentDetailPage({
         </div>
       </PageHero>
 
-      <section className="border-b border-line bg-paper py-12 sm:py-16">
+      <section className="border-b border-line bg-paper py-16 sm:py-24">
         <Container className="grid gap-4 sm:grid-cols-3">
           <FactCard label="Typically considered by" value={treatment.typicallyConsideredBy} />
           <FactCard label="May help with" value={treatment.mayHelpWith.join(", ")} />
@@ -82,19 +82,19 @@ export default async function TreatmentDetailPage({
       </section>
 
       {treatment.isHub ? (
-        <section aria-labelledby="techniques-heading" className="border-b border-line bg-cream-2 py-12 sm:py-16">
+        <section aria-labelledby="techniques-heading" className="border-b border-line bg-cream-2 py-16 sm:py-24">
           <Container>
             <SectionHeading
               id="techniques-heading"
               eyebrow="Choose a technique"
               title="LASIK, LASEK and PRK compared"
             />
-            <ul className="mt-8 grid gap-4 sm:grid-cols-3">
+            <ul className="mt-10 grid gap-5 sm:grid-cols-3">
               {laserTreatments.map((t) => (
                 <li key={t.slug}>
                   <Link
                     href={`/treatments/${t.slug}`}
-                    className="flex h-full flex-col justify-between rounded-2xl border border-line bg-paper p-6 shadow-soft hover:shadow-card"
+                    className="flex h-full flex-col justify-between rounded-2xl border border-line bg-paper p-7 shadow-soft hover:shadow-card"
                   >
                     <div>
                       <h3 className="font-serif text-lg text-ink">{t.name}</h3>
@@ -112,8 +112,8 @@ export default async function TreatmentDetailPage({
         </section>
       ) : null}
 
-      <section aria-labelledby="how-it-works-heading" className="border-b border-line bg-paper py-12 sm:py-16">
-        <Container className="grid gap-10 lg:grid-cols-2">
+      <section aria-labelledby="how-it-works-heading" className="border-b border-line bg-paper py-16 sm:py-24">
+        <Container className="grid gap-12 lg:grid-cols-2">
           <div>
             <SectionHeading id="how-it-works-heading" eyebrow="The procedure" title="How it works" />
             <ol className="mt-6 space-y-4">
@@ -145,7 +145,7 @@ export default async function TreatmentDetailPage({
         </Container>
       </section>
 
-      <section aria-labelledby="risks-heading" className="border-b border-line bg-cream-2 py-12 sm:py-16">
+      <section aria-labelledby="risks-heading" className="border-b border-line bg-cream-2 py-16 sm:py-24">
         <Container className="max-w-3xl">
           <SectionHeading
             id="risks-heading"
@@ -164,10 +164,10 @@ export default async function TreatmentDetailPage({
       </section>
 
       {alternatives.length > 0 ? (
-        <section aria-labelledby="alternatives-heading" className="border-b border-line bg-paper py-12 sm:py-16">
+        <section aria-labelledby="alternatives-heading" className="border-b border-line bg-paper py-16 sm:py-24">
           <Container>
             <SectionHeading id="alternatives-heading" eyebrow="Alternatives" title="Other pathways to consider" />
-            <ul className="mt-6 grid gap-4 sm:grid-cols-2">
+            <ul className="mt-8 grid gap-5 sm:grid-cols-2">
               {alternatives.map((alt) => (
                 <li key={alt!.slug}>
                   <Link
@@ -188,7 +188,7 @@ export default async function TreatmentDetailPage({
       ) : null}
 
       {treatment.faqs.length > 0 ? (
-        <section aria-labelledby="treatment-faq-heading" className="border-b border-line bg-cream-2 py-12 sm:py-16">
+        <section aria-labelledby="treatment-faq-heading" className="border-b border-line bg-cream-2 py-16 sm:py-24">
           <Container className="max-w-3xl">
             <SectionHeading id="treatment-faq-heading" eyebrow="Questions" title={`${treatment.shortName} FAQs`} />
             <div className="mt-6">
@@ -198,7 +198,7 @@ export default async function TreatmentDetailPage({
         </section>
       ) : null}
 
-      <section className="border-b border-line bg-paper py-12 sm:py-16">
+      <section className="border-b border-line bg-paper py-16 sm:py-24">
         <Container className="max-w-3xl">
           <MedicalReviewPanel />
         </Container>

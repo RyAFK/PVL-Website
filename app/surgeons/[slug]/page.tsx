@@ -57,8 +57,8 @@ export default async function SurgeonProfilePage({
         </CtaLink>
       </PageHero>
 
-      <section className="border-b border-line bg-paper py-12 sm:py-16">
-        <Container className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
+      <section className="border-b border-line bg-paper py-16 sm:py-24">
+        <Container className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr]">
           <div className="flex justify-center lg:justify-start">
             <span
               className="flex h-56 w-56 items-center justify-center rounded-full bg-gradient-to-br from-ink to-ink-2 font-serif text-5xl text-cream shadow-card"

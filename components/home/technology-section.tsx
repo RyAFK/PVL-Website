@@ -26,7 +26,7 @@ const capabilities = [
 
 export function TechnologySection() {
   return (
-    <section aria-labelledby="technology-heading" className="border-b border-line bg-paper py-16 sm:py-20">
+    <section aria-labelledby="technology-heading" className="border-b border-line bg-paper py-24 sm:py-28">
       <Container>
         <SectionHeading
           id="technology-heading"
@@ -34,9 +34,9 @@ export function TechnologySection() {
           title="Diagnostics that inform every recommendation"
           description="Technology supports the clinical decision — it doesn't replace the conversation with your consultant about what it means for you."
         />
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {capabilities.map((item) => (
-            <div key={item.title} className="rounded-2xl border border-line p-6">
+            <div key={item.title} className="rounded-2xl border border-line p-7">
               <h3 className="font-serif text-lg text-ink">{item.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate">{item.description}</p>
             </div>

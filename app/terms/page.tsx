@@ -16,7 +16,7 @@ export default function TermsPage() {
     <>
       <Breadcrumbs items={[{ name: "Terms of use", href: "/terms" }]} />
       <PageHero eyebrow="Legal" title="Terms of use" description="Pending legal review — placeholder content." />
-      <section className="border-b border-line bg-paper py-14 sm:py-16">
+      <section className="border-b border-line bg-paper py-20 sm:py-24">
         <Container className="max-w-3xl space-y-6 text-sm leading-relaxed text-slate">
           <p>
             This website provides general information about vision-correction treatments offered

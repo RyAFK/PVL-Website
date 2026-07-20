@@ -6,7 +6,7 @@ import { CheckIcon } from "@/components/ui/icons";
 
 export function PricingPreviewSection() {
   return (
-    <section aria-labelledby="pricing-heading" className="border-b border-line bg-cream-2 py-16 sm:py-20">
+    <section aria-labelledby="pricing-heading" className="border-b border-line bg-cream-2 py-24 sm:py-28">
       <Container>
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading
@@ -20,9 +20,9 @@ export function PricingPreviewSection() {
           </CtaLink>
         </div>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {pricingPackages.map((pkg) => (
-            <div key={pkg.treatmentSlug} className="rounded-2xl bg-paper p-6 shadow-soft">
+            <div key={pkg.treatmentSlug} className="rounded-2xl bg-paper p-7 shadow-soft">
               <h3 className="font-serif text-lg text-ink">{pkg.treatmentName}</h3>
               {pkg.guidePriceFrom ? (
                 <p className="mt-2 font-serif text-2xl text-ink">{pkg.guidePriceFrom}</p>
@@ -43,7 +43,7 @@ export function PricingPreviewSection() {
           ))}
         </div>
 
-        <dl className="mt-8 grid gap-4 rounded-2xl border border-line bg-paper p-6 sm:grid-cols-3">
+        <dl className="mt-10 grid gap-6 rounded-2xl border border-line bg-paper p-8 sm:grid-cols-3">
           <div>
             <dt className="text-sm font-semibold text-ink">Consultation fee</dt>
             <dd className="mt-1 text-sm text-slate">{pricingNotes.consultationFee}</dd>

@@ -12,7 +12,7 @@ export function LocationSection() {
   const mapEmbedSrc = `https://www.openstreetmap.org/export/embed.html?bbox=${mapBbox}&layer=mapnik&marker=${siteConfig.geo.latitude}%2C${siteConfig.geo.longitude}`;
 
   return (
-    <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-stretch">
+    <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-stretch">
       <div className="overflow-hidden rounded-2xl border border-line shadow-soft">
         <iframe
           title={`Map showing ${siteConfig.name} on Harley Street, London`}
@@ -22,7 +22,7 @@ export function LocationSection() {
         />
       </div>
 
-      <div className="rounded-2xl border border-line bg-paper p-6 sm:p-8">
+      <div className="rounded-2xl border border-line bg-paper p-7 sm:p-8">
         <h3 className="font-serif text-xl text-ink">Harley Street clinic</h3>
 
         <dl className="mt-5 space-y-4 text-sm">

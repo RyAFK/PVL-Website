@@ -24,15 +24,15 @@ export default function ContactPage() {
         description="Share a few details and a member of the patient care team will be in touch to arrange your assessment."
       />
 
-      <section id="book" className="scroll-mt-24 border-b border-line bg-paper py-14 sm:py-16">
-        <Container className="grid gap-10 lg:grid-cols-[1fr_1fr]">
+      <section id="book" className="scroll-mt-24 border-b border-line bg-paper py-20 sm:py-24">
+        <Container className="grid gap-12 lg:grid-cols-[1fr_1fr]">
           <div>
             <SectionHeading eyebrow="Enquiry form" title="Send an enquiry" />
             <div className="mt-6">
               <ContactForm />
             </div>
           </div>
-          <div className="rounded-2xl border border-line bg-cream-2 p-6 sm:p-8">
+          <div className="rounded-2xl border border-line bg-cream-2 p-7 sm:p-8">
             <h2 className="font-serif text-xl text-ink">Prefer to talk it through?</h2>
             <p className="mt-3 text-sm leading-relaxed text-slate">
               Call the patient care team directly, Monday to Saturday, to ask questions or book
@@ -48,7 +48,7 @@ export default function ContactPage() {
         </Container>
       </section>
 
-      <section aria-labelledby="contact-location-heading" className="border-b border-line bg-cream-2 py-14 sm:py-16">
+      <section aria-labelledby="contact-location-heading" className="border-b border-line bg-cream-2 py-20 sm:py-24">
         <Container>
           <SectionHeading id="contact-location-heading" eyebrow="Visit us" title="Harley Street clinic" />
           <div className="mt-8">

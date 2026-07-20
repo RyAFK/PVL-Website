@@ -2,7 +2,7 @@ import { journeyStages } from "@/content/journey";
 
 export function JourneyTimeline() {
   return (
-    <ol className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 2xl:grid-cols-6">
+    <ol className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5 2xl:grid-cols-6">
       {journeyStages.map((stage) => (
         <li
           key={stage.step}

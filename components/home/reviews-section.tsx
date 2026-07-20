@@ -8,7 +8,7 @@ export function ReviewsSection() {
   const featured = reviews.slice(0, 3);
 
   return (
-    <section aria-labelledby="reviews-heading" className="border-b border-line bg-paper py-16 sm:py-20">
+    <section aria-labelledby="reviews-heading" className="border-b border-line bg-paper py-24 sm:py-28">
       <Container>
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading
@@ -20,7 +20,7 @@ export function ReviewsSection() {
             Read more patient stories
           </CtaLink>
         </div>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {featured.map((review) => (
             <ReviewCard key={review.id} review={review} />
           ))}

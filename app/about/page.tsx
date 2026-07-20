@@ -24,7 +24,7 @@ export default function AboutPage() {
         title="A Harley Street clinic built around one relationship"
         description="Precision Vision London brings assessment, treatment and aftercare together under a single named consultant, rather than passing patients between departments."
       />
-      <section className="border-b border-line bg-paper py-14 sm:py-16">
+      <section className="border-b border-line bg-paper py-20 sm:py-24">
         <Container className="max-w-3xl space-y-4 text-sm leading-relaxed text-slate">
           <p>
             We focus on a small number of vision-correction pathways — laser eye surgery, ICL,

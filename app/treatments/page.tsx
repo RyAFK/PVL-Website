@@ -27,13 +27,13 @@ export default function TreatmentsIndexPage() {
         description="Each option below is typically considered for specific circumstances. Your consultant confirms what's appropriate after a full diagnostic assessment."
       />
 
-      <section className="border-b border-line bg-paper py-14 sm:py-16">
+      <section className="border-b border-line bg-paper py-20 sm:py-24">
         <Container>
           <TreatmentGrid treatments={homepageTreatmentCards} />
         </Container>
       </section>
 
-      <section aria-labelledby="laser-compare-heading" className="border-b border-line bg-cream-2 py-14 sm:py-16">
+      <section aria-labelledby="laser-compare-heading" className="border-b border-line bg-cream-2 py-20 sm:py-24">
         <Container>
           <SectionHeading
             id="laser-compare-heading"
@@ -41,12 +41,12 @@ export default function TreatmentsIndexPage() {
             title="Compare LASIK, LASEK and PRK"
             description="These are three techniques within laser eye surgery, not three unrelated treatments. Your consultant will recommend one based on your corneal measurements and lifestyle."
           />
-          <ul className="mt-8 grid gap-4 sm:grid-cols-3">
+          <ul className="mt-10 grid gap-5 sm:grid-cols-3">
             {laserTreatments.map((treatment) => (
               <li key={treatment.slug}>
                 <Link
                   href={`/treatments/${treatment.slug}`}
-                  className="flex h-full flex-col justify-between rounded-2xl border border-line bg-paper p-6 shadow-soft hover:shadow-card"
+                  className="flex h-full flex-col justify-between rounded-2xl border border-line bg-paper p-7 shadow-soft hover:shadow-card"
                 >
                   <div>
                     <h3 className="font-serif text-lg text-ink">{treatment.name}</h3>

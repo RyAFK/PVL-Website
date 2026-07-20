@@ -4,7 +4,7 @@ import { JourneyTimeline } from "@/components/sections/journey-timeline";
 
 export function JourneySection() {
   return (
-    <section aria-labelledby="journey-heading" className="border-b border-line bg-cream-2 py-16 sm:py-20">
+    <section aria-labelledby="journey-heading" className="border-b border-line bg-cream-2 py-24 sm:py-28">
       <Container>
         <SectionHeading
           id="journey-heading"
