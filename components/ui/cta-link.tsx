@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ReactNode } from "react";
 import { trackEvent } from "@/lib/analytics";
 
-type Variant = "primary" | "secondary" | "ghost" | "outline-light";
+type Variant = "primary" | "secondary" | "ghost" | "outline-light" | "gold";
 type Size = "md" | "lg";
 
 interface CtaLinkProps {
@@ -25,6 +25,7 @@ const variants: Record<Variant, string> = {
   secondary: "border border-ink/20 bg-transparent text-ink hover:bg-ink/5",
   ghost: "text-ink underline decoration-gold decoration-2 underline-offset-4 hover:text-ink-2",
   "outline-light": "border border-cream/50 text-cream hover:bg-cream/10",
+  gold: "bg-gold-light text-ink hover:brightness-95",
 };
 
 const sizes: Record<Size, string> = {
