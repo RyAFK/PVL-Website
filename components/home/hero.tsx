@@ -9,7 +9,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-line bg-cream">
       <Container className="relative grid gap-14 py-20 sm:py-28 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-32">
-        <div>
+        <div className="order-2 lg:order-1">
           <p className="text-sm font-semibold uppercase tracking-[0.14em] text-gold">
             Surgeon-led care on Harley Street
           </p>
@@ -51,17 +51,17 @@ export function Hero() {
           </ul>
         </div>
 
-        <div className="relative hidden aspect-[4/5] items-center justify-center overflow-hidden rounded-[2.5rem] lg:flex" aria-hidden="true">
+        <div className="relative order-1 flex aspect-[16/11] items-center justify-center overflow-hidden rounded-[1.75rem] lg:order-2 lg:aspect-[4/5] lg:rounded-[2.5rem]">
           <Image
             src="/images/hero-eye-illustration.svg"
             alt=""
             fill
             priority
             unoptimized
-            sizes="(min-width: 1024px) 45vw, 0px"
+            sizes="(min-width: 1024px) 45vw, 100vw"
             className="object-cover"
           />
-          <div className="absolute bottom-8 left-8 right-8 rounded-2xl bg-cream/95 p-4 shadow-soft backdrop-blur">
+          <div className="absolute bottom-5 left-5 right-5 rounded-2xl bg-cream/95 p-4 shadow-soft backdrop-blur sm:bottom-8 sm:left-8 sm:right-8">
             <p className="text-xs font-semibold uppercase tracking-[0.1em] text-gold">
               Diagnostic-led planning
             </p>
