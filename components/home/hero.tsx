@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { CtaLink } from "@/components/ui/cta-link";
 import { CTA } from "@/content/ctas";
@@ -50,13 +51,16 @@ export function Hero() {
           </ul>
         </div>
 
-        <div className="relative hidden aspect-[4/5] items-center justify-center lg:flex" aria-hidden="true">
-          <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-br from-ink via-ink-2 to-[#4a4636]" />
-          <div className="absolute inset-6 rounded-[2rem] border border-cream/15" />
-          <div className="relative h-56 w-56 rounded-full border border-gold-light/40">
-            <div className="absolute inset-6 rounded-full border border-gold-light/50" />
-            <div className="absolute inset-[42%] rounded-full bg-gold-light/90 shadow-[0_0_60px_10px_rgba(209,163,92,0.4)]" />
-          </div>
+        <div className="relative hidden aspect-[4/5] items-center justify-center overflow-hidden rounded-[2.5rem] lg:flex" aria-hidden="true">
+          <Image
+            src="/images/hero-eye-illustration.svg"
+            alt=""
+            fill
+            priority
+            unoptimized
+            sizes="(min-width: 1024px) 45vw, 0px"
+            className="object-cover"
+          />
           <div className="absolute bottom-8 left-8 right-8 rounded-2xl bg-cream/95 p-4 shadow-soft backdrop-blur">
             <p className="text-xs font-semibold uppercase tracking-[0.1em] text-gold">
               Diagnostic-led planning
