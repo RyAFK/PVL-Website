@@ -16,8 +16,8 @@ export function FinalCtaSection() {
         <div className="flex flex-col gap-3 sm:flex-row">
           <CtaLink
             href="/contact#book"
+            variant="gold"
             size="lg"
-            className="bg-gold-light text-ink hover:brightness-95"
             eventName="book_consultation_click"
             eventPayload={{ location: "final_cta" }}
           >
