@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { footerNav } from "@/content/nav";
 import { siteConfig } from "@/lib/site";
+import { Logo } from "@/components/layout/logo";
 import { PhoneIcon, MailIcon, MapPinIcon } from "@/components/ui/icons";
 
 export function SiteFooter() {
@@ -9,8 +10,8 @@ export function SiteFooter() {
     <footer className="border-t border-line bg-ink pb-16 text-cream xl:pb-0">
       <Container className="grid gap-12 py-20 sm:grid-cols-2 lg:grid-cols-5">
         <div className="sm:col-span-2 lg:col-span-2">
-          <span className="font-serif text-xl font-semibold">Precision Vision London</span>
-          <p className="mt-3 max-w-sm text-sm leading-relaxed text-cream/70">
+          <Logo inverted />
+          <p className="mt-4 max-w-sm text-sm leading-relaxed text-cream/70">
             Consultant-led vision correction on Harley Street, London, covering laser eye
             surgery, ICL, lens replacement and cataract treatment.
           </p>
