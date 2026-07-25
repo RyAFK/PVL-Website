@@ -36,7 +36,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/brand/precision-vision-icon-256.png",
+    shortcut: "/brand/precision-vision-icon-256.png",
+    apple: "/brand/precision-vision-apple-icon-180.png",
   },
 };
 

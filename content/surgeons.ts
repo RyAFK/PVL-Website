@@ -1,5 +1,7 @@
-// PLACEHOLDER — names, qualifications, GMC numbers and figures below must be
-// replaced with the real, approved details for each surgeon before launch.
+// Dr CT Pillai's name, role, qualifications and bio are verified against the
+// approved source content. His GMC number remains PLACEHOLDER pending
+// confirmation. Ms Sarah Collins is unverified PLACEHOLDER content in full —
+// replace with real, approved details before launch.
 export interface Surgeon {
   slug: string;
   name: string;
@@ -15,24 +17,24 @@ export interface Surgeon {
 
 export const surgeons: Surgeon[] = [
   {
-    slug: "adam-whitfield",
-    name: "Mr Adam Whitfield",
-    role: "Lead Consultant Ophthalmic Surgeon",
+    slug: "dr-ct-pillai",
+    name: "Dr CT Pillai",
+    role: "Founder & Medical Director",
     isLead: true,
-    qualifications: ["MB BS", "FRCOphth", "Cert LRS"],
-    gmcNumber: "GMC 0000000",
+    qualifications: ["MD", "DO", "FRCS(Ed)", "FRCOphth"],
+    gmcNumber: "GMC 0000000", // PLACEHOLDER — publish only the real, approved GMC number
     specialistInterests: [
-      "Laser vision correction (LASIK, LASEK, PRK)",
-      "Implantable Collamer Lenses (ICL)",
-      "Refractive lens exchange",
+      "Laser vision correction",
       "Cataract surgery",
+      "Keratoconus and corneal treatments",
+      "Refractive lens exchange",
     ],
-    yearsExperience: 22,
-    procedureExperienceLabel: "Has personally performed several thousand refractive and cataract procedures",
+    yearsExperience: 30,
+    procedureExperienceLabel:
+      "Personally performs the laser vision correction, cataract and corneal procedures he oversees",
     bio: [
-      "Mr Whitfield trained in ophthalmology within the NHS before completing fellowship training in corneal and refractive surgery.",
-      "He leads the clinical team at Precision Vision London, overseeing treatment planning from initial assessment through to aftercare.",
-      "He has a specialist interest in complex prescriptions and cases referred after being told elsewhere that laser treatment may not be suitable.",
+      "Dr CT Pillai is the founder and medical director of Precision Vision London, with more than 30 years of experience in corneal and refractive surgery.",
+      "He founded the practice on Harley Street and personally performs the laser vision correction, cataract and corneal procedures he oversees.",
     ],
   },
   {
