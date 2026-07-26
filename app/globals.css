@@ -95,3 +95,123 @@ body {
     text-wrap: balance;
   }
 }
+
+/*
+ * Cinematic hero optical layer — decorative-only visual treatment for the
+ * homepage hero. See components/home/cinematic-hero-layer.tsx. Positions
+ * are driven at runtime via the --pvl-* custom properties (written directly
+ * by lib/use-pointer-lighting.ts); the values below are the resting/default
+ * pose, also used verbatim when reduced motion is enabled.
+ */
+.pvl-cinematic-hero {
+  --pvl-kx: 42%;
+  --pvl-ky: 38%;
+  --pvl-ax: 66%;
+  --pvl-ay: 62%;
+  --pvl-rx: 0deg;
+  --pvl-ry: 0deg;
+  --pvl-intensity: 1;
+  --pvl-accent-violet: #8f7ae6;
+  --pvl-accent-cyan: #4bd0e0;
+}
+
+.pvl-cinematic-accent,
+.pvl-cinematic-key {
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+  animation: pvl-hero-enter-bg 0.8s ease-out both;
+}
+
+.pvl-cinematic-accent {
+  background-image: radial-gradient(closest-side, var(--pvl-accent-violet), transparent 70%);
+  background-position: var(--pvl-ax) var(--pvl-ay);
+  background-size: 70% 70%;
+  opacity: calc(0.22 * var(--pvl-intensity));
+  filter: blur(40px);
+}
+
+.pvl-cinematic-key {
+  background-image: radial-gradient(closest-side, rgba(248, 250, 255, 0.9), transparent 70%);
+  background-position: var(--pvl-kx) var(--pvl-ky);
+  background-size: 55% 55%;
+  opacity: calc(0.3 * var(--pvl-intensity));
+  filter: blur(30px);
+  animation-delay: 0.1s;
+}
+
+.pvl-cinematic-object {
+  position: absolute;
+  inset: 0;
+  transform: perspective(1000px) rotateX(var(--pvl-rx)) rotateY(var(--pvl-ry));
+  transform-origin: 50% 50%;
+  animation: pvl-hero-enter-object 0.9s 0.15s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.pvl-cinematic-sheen {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(115deg, transparent 40%, rgba(255, 255, 255, 0.5) 50%, transparent 60%);
+  background-position: var(--pvl-kx) var(--pvl-ky);
+  background-size: 220% 220%;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url(#pvlInfinityMask);
+  mask-image: url(#pvlInfinityMask);
+  opacity: calc(0.5 * var(--pvl-intensity));
+  animation: pvl-hero-enter-sheen 1.2s 0.3s ease-out both;
+}
+
+@keyframes pvl-hero-enter-bg {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes pvl-hero-enter-object {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pvl-hero-enter-sheen {
+  0% {
+    opacity: 0;
+  }
+  55% {
+    opacity: calc(0.6 * var(--pvl-intensity));
+  }
+  100% {
+    opacity: calc(0.5 * var(--pvl-intensity));
+  }
+}
+
+.pvl-hero-content-enter {
+  animation: pvl-hero-content-enter 0.7s 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes pvl-hero-content-enter {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .pvl-cinematic-accent,
+  .pvl-cinematic-key {
+    filter: blur(20px);
+  }
+  .pvl-cinematic-sheen {
+    display: none;
+  }
+}

@@ -11,9 +11,9 @@ export interface TrustStat {
 
 export const trustStats: TrustStat[] = [
   {
-    value: "22+ years",
+    value: "30+ years",
     label: "Lead surgeon experience",
-    detail: "Mr Adam Whitfield's surgical career, including NHS and private practice",
+    detail: "Dr CT Pillai's surgical career in corneal and refractive surgery",
   },
   {
     value: "Harley Street",
@@ -34,7 +34,7 @@ export const trustStats: TrustStat[] = [
 
 export const trustRowItems: string[] = [
   "Harley Street clinic",
-  "22+ years' surgical experience",
+  "30+ years' surgical experience",
   "One-year care guarantee",
   "Consultant-led care",
   "Independently reviewed by patients",
