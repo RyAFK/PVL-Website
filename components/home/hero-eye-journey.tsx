@@ -29,7 +29,7 @@ export function HeroEyeJourney() {
           preload={index === 0}
           sizes="100vw"
           className={`${styles.frame} object-cover`}
-          style={{ animationDelay: `-${(index * slot).toFixed(4)}s` }}
+          style={{ animationDelay: `${(index * slot).toFixed(4)}s` }}
         />
       ))}
     </div>
