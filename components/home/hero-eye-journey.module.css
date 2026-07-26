@@ -3,7 +3,7 @@
   inset: 0;
   opacity: 0;
   animation-name: crossfade;
-  animation-duration: 8s;
+  animation-duration: 16s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
