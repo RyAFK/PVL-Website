@@ -3,13 +3,13 @@ import { CtaLink } from "@/components/ui/cta-link";
 import { CTA } from "@/content/ctas";
 import { trustRowItems } from "@/content/trust-stats";
 import { CheckIcon } from "@/components/ui/icons";
-import { CinematicHeroLayer } from "@/components/home/cinematic-hero-layer";
+import { HeroVideoBackground } from "@/components/home/hero-video-background";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-line">
       <div className="absolute inset-0 bg-ink">
-        <CinematicHeroLayer />
+        <HeroVideoBackground />
         <div className="absolute inset-0 bg-ink/80" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,transparent_0%,rgba(22,33,92,0.4)_100%)]" />
       </div>
