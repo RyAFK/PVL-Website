@@ -10,8 +10,8 @@ export function Hero() {
     <section className="relative overflow-hidden border-b border-line">
       <div className="absolute inset-0">
         <HeroEyeJourney />
-        <div className="absolute inset-0 bg-ink/45" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_45%,rgba(22,33,92,0.6)_0%,rgba(22,33,92,0.25)_55%,transparent_100%)]" />
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_45%,rgba(0,0,0,0.55)_0%,rgba(0,0,0,0.2)_55%,transparent_100%)]" />
       </div>
 
       <Container className="relative flex min-h-[640px] flex-col items-center justify-center py-24 text-center sm:min-h-[720px] sm:py-32">
