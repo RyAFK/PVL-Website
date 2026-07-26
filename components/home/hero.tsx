@@ -1,25 +1,17 @@
-import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { CtaLink } from "@/components/ui/cta-link";
 import { CTA } from "@/content/ctas";
 import { trustRowItems } from "@/content/trust-stats";
 import { CheckIcon } from "@/components/ui/icons";
+import { HeroEyeJourney } from "@/components/home/hero-eye-journey";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-line">
       <div className="absolute inset-0">
-        <Image
-          src="/images/hero-eye-illustration.svg"
-          alt=""
-          fill
-          priority
-          unoptimized
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-ink/85" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,transparent_0%,rgba(24,36,48,0.35)_100%)]" />
+        <HeroEyeJourney />
+        <div className="absolute inset-0 bg-ink/45" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_45%,rgba(22,33,92,0.6)_0%,rgba(22,33,92,0.25)_55%,transparent_100%)]" />
       </div>
 
       <Container className="relative flex min-h-[640px] flex-col items-center justify-center py-24 text-center sm:min-h-[720px] sm:py-32">
