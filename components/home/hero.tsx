@@ -10,8 +10,8 @@ export function Hero() {
     <section className="relative overflow-hidden border-b border-line">
       <div className="absolute inset-0 bg-ink">
         <HeroVideoBackground />
-        <div className="absolute inset-0 bg-ink/80" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,transparent_0%,rgba(22,33,92,0.4)_100%)]" />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_45%,rgba(0,0,0,0.15)_0%,rgba(0,0,0,0.55)_100%)]" />
       </div>
 
       <Container className="pvl-hero-content-enter relative flex min-h-[640px] flex-col items-center justify-center py-24 text-center sm:min-h-[720px] sm:py-32">
