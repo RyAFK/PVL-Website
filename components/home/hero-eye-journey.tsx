@@ -13,7 +13,7 @@ const FRAMES = [
   "frame-09-retinal-focal-point",
 ];
 
-const LOOP_DURATION_SECONDS = 8;
+const LOOP_DURATION_SECONDS = 16;
 
 export function HeroEyeJourney() {
   const slot = LOOP_DURATION_SECONDS / FRAMES.length;
@@ -28,8 +28,9 @@ export function HeroEyeJourney() {
           fill
           preload={index === 0}
           sizes="100vw"
+          quality={95}
           className={`${styles.frame} object-cover`}
-          style={{ animationDelay: `-${(index * slot).toFixed(4)}s` }}
+          style={{ animationDelay: `${(index * slot).toFixed(4)}s` }}
         />
       ))}
     </div>
